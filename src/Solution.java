@@ -3,6 +3,21 @@ import java.util.HashMap;
 /* The isBadVersion API is defined in the parent class VersionControl.
        */
 public class Solution {
+    public void moveZeroes(int[] nums) {
+        if(nums.length==0){
+            return;
+        }
+        int index = 0;
+        for (int i = 0; i <nums.length ; i++) {
+            if(nums[i]!=0){
+                nums[index]=nums[i];
+            }
+            index++;
+        }
+        for (int i = index; i < nums.length ; i++) {
+            nums[i]=0;
+        }
+    }
     public boolean wordPattern(String pattern, String str) {
         if(pattern == null ||str == null){//如果两个长度都为零 返回false
             return false;
