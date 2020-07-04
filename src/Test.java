@@ -10,8 +10,8 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) {
         String str="cat dog dog catt",pattern = "abba";
-        int num=3;
+        int num=81;
         Solution a=new Solution();
-        System.out.println(a.wordPattern(pattern,str));
+        System.out.println(a.isPowerOfThree(num));
     }
 }
