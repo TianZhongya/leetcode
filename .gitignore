@@ -1,4 +1,5 @@
 # Project exclude paths
 /.idea/
 /out/
+/src/
 ilovejava.iml
